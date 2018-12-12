@@ -1,0 +1,102 @@
+MAven
+settting.xml
+local repo
+nexus
+convert yesterdays project into maven
+
+gradle
+notepad-helloworld
+observed entire 
+
+
+
+POM.xml structure:-
+1)project info:
+group id
+artifact id
+2)Dependency(-transitive dependency managed
+-jar downloaded from maven repository to local m2 repo by default but can be changed if we want using <localrepository> tag):
+Hibernate core
+Spring
+3)Build
+4)Repo
+
+*maven works with java , gradle works with other languages as well
+*window->preferences->maven->user settings
+
+For gradle:
+download gradle
+path upto bin folder
+
+HelloworldGradle
+src
+ main
+   java 
+      com
+         capgemini
+            Helloworld.java
+build.gradle
+  apply plugin: 'java'
+  apply plugin: 'application'
+  mainClassName='com.capgemini.Helloworld'
+
+To be written in command prompt if in notepad++/written in gradle tasks in eclipse:
+gradle build
+gradle run 
+ 
+sonarQube=code quality check
+switch case
+hashcode
+equals
+
+
+
+1.start server first
+take batch startsonar.bat file
+
+localhost:9000
+
+2.change bankapplication to gradle project.
+   build.gradle
+       build sonar-runner
+   apply plugin: 'java'
+   nexus repo
+    add dependcies mockito juit
+
+repositories{
+  maven{
+    url " http://10.109.32.183:8081/nexus/content/groups/public  "}
+}
+
+dependencies{
+testCOmpile}
+
+
+proxy setting 
+blrproxy.igate.com
+
+8080
+
+account creation on github
+
+
+1.uploading project in repositories
+       two types of reposit:centralized reposit and distributed reposit
+
+CR :in single loction every version store./limited to ur own network or company
+DR: at differnt location /we can commit from our own internet also.
+
+2.GITHUB install,
+       in cmd type git,
+           on remote side create account in public.
+HOw to upload using cmd and eclipse
+
+
+create reposit on client side
+       >git init
+         >git pull "url"
+           >git add file.java
+            >git commit -m "Any simple java file added in reposit"
+             >git push "url"  master
+               
+
